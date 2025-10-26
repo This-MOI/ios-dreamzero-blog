@@ -1,14 +1,13 @@
 //
-//  ContentView.swift
+//  ItemListView.swift
 //  DreamzeroBlog
 //
 //  Created by dreamzero on 2025/10/24.
 //
-
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct ItemListView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
 
@@ -53,9 +52,4 @@ struct ContentView: View {
             }
         }
     }
-}
-
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		44EFA5E72EABAF4F009BB169 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 44EFA5E62EABAF4F009BB169 /* Kingfisher */; };
+		44EFA5EA2EABAF59009BB169 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 44EFA5E92EABAF59009BB169 /* KeychainAccess */; };
+		44EFA5ED2EABB086009BB169 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 44EFA5EC2EABB086009BB169 /* SwiftyBeaver */; };
+		44EFA62B2EABE9D7009BB169 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 44EFA62A2EABE9D7009BB169 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		44EFA5D12EABAE7A009BB169 /* DreamzeroBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamzeroBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44EFA5EA2EABAF59009BB169 /* KeychainAccess in Frameworks */,
+				44EFA62B2EABE9D7009BB169 /* Alamofire in Frameworks */,
+				44EFA5E72EABAF4F009BB169 /* Kingfisher in Frameworks */,
+				44EFA5ED2EABB086009BB169 /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = DreamzeroBlog;
 			packageProductDependencies = (
+				44EFA5E62EABAF4F009BB169 /* Kingfisher */,
+				44EFA5E92EABAF59009BB169 /* KeychainAccess */,
+				44EFA5EC2EABB086009BB169 /* SwiftyBeaver */,
+				44EFA62A2EABE9D7009BB169 /* Alamofire */,
 			);
 			productName = DreamzeroBlog;
 			productReference = 44EFA5D12EABAE7A009BB169 /* DreamzeroBlog.app */;
@@ -94,6 +109,12 @@
 			);
 			mainGroup = 44EFA5C82EABAE7A009BB169;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				44EFA5E52EABAF4F009BB169 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				44EFA5E82EABAF59009BB169 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				44EFA5EB2EABB086009BB169 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				44EFA6292EABE9D7009BB169 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 44EFA5D22EABAE7A009BB169 /* Products */;
 			projectDirPath = "";
@@ -256,6 +277,8 @@
 				DEVELOPMENT_TEAM = 4D9V23XMD7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DreamZero;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +311,8 @@
 				DEVELOPMENT_TEAM = 4D9V23XMD7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DreamZero;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +357,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44EFA5E52EABAF4F009BB169 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.0;
+			};
+		};
+		44EFA5E82EABAF59009BB169 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		44EFA5EB2EABB086009BB169 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+		44EFA6292EABE9D7009BB169 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44EFA5E62EABAF4F009BB169 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44EFA5E52EABAF4F009BB169 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		44EFA5E92EABAF59009BB169 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44EFA5E82EABAF59009BB169 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		44EFA5EC2EABB086009BB169 /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44EFA5EB2EABB086009BB169 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+		44EFA62A2EABE9D7009BB169 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44EFA6292EABE9D7009BB169 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 44EFA5C92EABAE7A009BB169 /* Project object */;
 }
