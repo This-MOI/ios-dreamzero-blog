@@ -12,6 +12,7 @@ struct LoginView: View {
     @State private var password = ""
     @State private var isLoading = false
     @State private var showPassword = false
+    @State private var showRegisterSheet = false
     @FocusState private var focusedField: Field?
     
     enum Field {
@@ -151,7 +152,7 @@ struct LoginView: View {
                         .foregroundColor(.white.opacity(0.6))
                     
                     Button("注册新账号") {
-                        // 处理注册
+                        showRegisterSheet = true
                     }
                     .font(.subheadline)
                     .foregroundColor(.white.opacity(0.8))
@@ -168,6 +169,9 @@ struct LoginView: View {
             case .none:
                 break
             }
+        }
+        .sheet(isPresented: $showRegisterSheet) {
+            RegisterView()
         }
     }
     
