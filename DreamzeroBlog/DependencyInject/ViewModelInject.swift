@@ -12,4 +12,8 @@ extension Container {
     var photoListViewModel: Factory<PhotoListViewModel> {
         self { PhotoListViewModel(repo: self.photoRepository()) }
     }
+    
+    var registerViewModel: Factory<RegisterViewModel> {
+        self { RegisterViewModel() }
+    }
 }

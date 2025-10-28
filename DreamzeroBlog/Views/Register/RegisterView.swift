@@ -2,15 +2,23 @@
 //  RegisterView.swift
 //  DreamzeroBlog
 //
-//  Created by AI Assistant on 2025/10/25.
+//  Created by dreamzero on 2025/10/25.
 //
 
 import SwiftUI
+import Factory
 
 /// 注册主视图 - 管理整个注册流程
 struct RegisterView: View {
-    @State private var viewModel = RegisterViewModel()
+    // 使用 Factory 容器获取 @Observable 的 ViewModel
+    @State private var viewModel: RegisterViewModel = Container.shared.registerViewModel()
     @Environment(\.dismiss) private var dismiss
+    
+    init (vm: RegisterViewModel?) {
+        if let vm = vm {
+            _viewModel = State(initialValue: vm)
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -60,6 +68,13 @@ struct RegisterView: View {
             }
         }
         .accentColor(.blue)
+    }
+}
+
+// 默认为viewModel为空的初始化器
+extension RegisterView {
+    init () {
+        self.init(vm: nil)
     }
 }
 
