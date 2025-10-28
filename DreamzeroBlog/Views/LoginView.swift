@@ -70,10 +70,6 @@ struct LoginView: View {
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(12)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(focusedField == .username ? Color.blue : Color.clear, lineWidth: 2)
-                        )
                     }
                     
                     // 密码输入框
@@ -106,10 +102,6 @@ struct LoginView: View {
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(12)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(focusedField == .password ? Color.blue : Color.clear, lineWidth: 2)
-                        )
                     }
                     
                     // 登录按钮
@@ -169,6 +161,9 @@ struct LoginView: View {
             case .none:
                 break
             }
+        }
+        .onTapGesture {
+            focusedField = nil
         }
         .sheet(isPresented: $showRegisterSheet) {
             RegisterView()

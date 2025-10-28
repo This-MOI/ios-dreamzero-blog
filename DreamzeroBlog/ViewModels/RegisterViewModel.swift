@@ -77,6 +77,7 @@ class RegisterViewModel {
         isEmailValid = emailPredicate.evaluate(with: email)
     }
     
+    // 验证用户名
     private func validateUsername() {
         // 用户名验证（3-20个字符，只能包含字母、数字、下划线）
         let usernameRegex = "^[a-zA-Z0-9_]{3,20}$"
@@ -84,6 +85,7 @@ class RegisterViewModel {
         isUsernameValid = usernamePredicate.evaluate(with: username)
     }
     
+    // 验证密码
     private func validatePassword() {
         // 密码验证（至少8个字符，包含字母和数字）
         isPasswordValid = password.count >= 8 && 
@@ -116,6 +118,7 @@ class RegisterViewModel {
         }
         
         isLoading = true
+        
         errorMessage = nil
         
         // 模拟注册请求
