@@ -11,7 +11,7 @@ import Alamofire
 // MARK: - 1. 接口蓝图
 // 所有业务接口（登录、商品列表、上传头像……）都通过遵守这个协议来描述：
 // “我要访问哪个路径、用什么 HTTP 方法、传什么参数、要不要加头、超时多久”
-public protocol APIEndpoint: Encodable, Sendable {
+public protocol APIEndpoint: Sendable {
     
     /* 必须提供 */
     var path: String { get }            // 相对路径，例如 "/login"

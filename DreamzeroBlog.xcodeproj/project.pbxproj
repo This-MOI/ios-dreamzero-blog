@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44D1342B2EAF3254003004F5 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 44D1342A2EAF3254003004F5 /* Factory */; };
 		44EFA5E72EABAF4F009BB169 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 44EFA5E62EABAF4F009BB169 /* Kingfisher */; };
 		44EFA5EA2EABAF59009BB169 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 44EFA5E92EABAF59009BB169 /* KeychainAccess */; };
 		44EFA5ED2EABB086009BB169 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 44EFA5EC2EABB086009BB169 /* SwiftyBeaver */; };
@@ -31,6 +32,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44EFA5EA2EABAF59009BB169 /* KeychainAccess in Frameworks */,
+				44D1342B2EAF3254003004F5 /* Factory in Frameworks */,
 				44EFA62B2EABE9D7009BB169 /* Alamofire in Frameworks */,
 				44EFA5E72EABAF4F009BB169 /* Kingfisher in Frameworks */,
 				44EFA5ED2EABB086009BB169 /* SwiftyBeaver in Frameworks */,
@@ -80,6 +82,7 @@
 				44EFA5E92EABAF59009BB169 /* KeychainAccess */,
 				44EFA5EC2EABB086009BB169 /* SwiftyBeaver */,
 				44EFA62A2EABE9D7009BB169 /* Alamofire */,
+				44D1342A2EAF3254003004F5 /* Factory */,
 			);
 			productName = DreamzeroBlog;
 			productReference = 44EFA5D12EABAE7A009BB169 /* DreamzeroBlog.app */;
@@ -114,6 +117,7 @@
 				44EFA5E82EABAF59009BB169 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				44EFA5EB2EABB086009BB169 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
 				44EFA6292EABE9D7009BB169 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				44D134292EAF3254003004F5 /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 44EFA5D22EABAE7A009BB169 /* Products */;
@@ -359,6 +363,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		44D134292EAF3254003004F5 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
 		44EFA5E52EABAF4F009BB169 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -394,6 +406,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		44D1342A2EAF3254003004F5 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D134292EAF3254003004F5 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
 		44EFA5E62EABAF4F009BB169 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 44EFA5E52EABAF4F009BB169 /* XCRemoteSwiftPackageReference "Kingfisher" */;

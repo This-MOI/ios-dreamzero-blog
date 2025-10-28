@@ -13,3 +13,9 @@ struct OtherTabView: View {
             .padding()
     }
 }
+
+struct OtherTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        OtherTabView()
+    }
+}

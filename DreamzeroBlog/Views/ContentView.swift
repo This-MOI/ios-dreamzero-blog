@@ -11,16 +11,16 @@ import SwiftData
 struct ContentView: View {
     var body: some View {
         TabView {
-            // 第一个 Tab
-            ItemListView()
-                .tabItem {
-                    Label("Items", systemImage: "list.dash")
-                }
 
-            // 第二个 Tab
             OtherTabView()
                 .tabItem {
                     Label("More", systemImage: "ellipsis.circle")
+                }
+            
+            // Daily Photo View
+            PhotoGridView()
+                .tabItem {
+                    Label("Daily Photo", systemImage: "photo")
                 }
             
             // Login Tab
@@ -28,6 +28,8 @@ struct ContentView: View {
                 .tabItem {
                     Label("Login", systemImage: "person.crop.circle")
                 }
+            
+            
         }
     }
 }
@@ -35,5 +37,4 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
